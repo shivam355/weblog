@@ -17,6 +17,7 @@ export class WelcomeComponent implements OnInit {
   constructor(private service: WelcomeService, private router: Router, private session: SessionService) { }
 
   ngOnInit() {
+    console.log("welcome init");
   }
 
 

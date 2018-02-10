@@ -18,6 +18,9 @@
                 <li class="active" *ngIf="session.isLoggedIn">
                     <a routerLink="/logout">Home</a>
                 </li>
+                <li class="active" *ngIf="session.isLoggedIn">
+                    <a routerLink="/newPost">New Post</a>
+                </li>
                 <li *ngIf="!session.isLoggedIn">
                     <a href="#">Products</a>
                 </li>
