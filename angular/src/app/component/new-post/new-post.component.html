@@ -1,0 +1,14 @@
+<div id="content" class="meditor">
+    <form action="submit.php" onsubmit="document.getElementById('postxt').value = document.getElementById('noise').value; document.getElementById('postxt').click(); return false;">
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Post title">
+        </div>
+        <fieldset>
+            <textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
+        </fieldset>
+        <fieldset class="submit">
+            <input type="submit" value="Check the submitted code" />
+        </fieldset>
+    </form>
+    <input id="postxt" type="hidden" value="" (click)="getPost($event)"  />
+</div>
