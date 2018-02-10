@@ -1,0 +1,22 @@
+# compiled output
+angular/dist
+angular/tmp
+angular/out-tsc
+
+# dependencies
+angular/node_modules
+
+
+# e2e
+angular/e2e/*.js
+angular/e2e/*.map
+
+# System Files
+angular/.DS_Store
+angular/Thumbs.db
+
+#eclipse
+target/
+.classpath
+.project
+.settings/
