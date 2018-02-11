@@ -16,10 +16,10 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li class="active" *ngIf="session.isLoggedIn">
-                    <a routerLink="/logout">Home</a>
+                    <a routerLink="/home">Home</a>
                 </li>
                 <li class="active" *ngIf="session.isLoggedIn">
-                    <a routerLink="/newPost">New Post</a>
+                    <a href="#" routerLink="/newPost">New Post</a>
                 </li>
                 <li *ngIf="!session.isLoggedIn">
                     <a href="#">Products</a>

@@ -6,16 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-post.component.css']
 })
 export class NewPostComponent implements OnInit {
-  postValue: string = "";
-  constructor() { }
+  htmlContent;
+  ngOnInit(): void {
 
-  ngOnInit() {
   }
 
-  getPost(event) {
-    var target = event.target || event.srcElement || event.currentTarget;
-    var idAttr = target.value;
-    console.log("hello:" + idAttr);
+  preview() {
+    console.log("HTML: " + this.htmlContent);
   }
-
 }

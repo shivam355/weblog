@@ -1,14 +1,25 @@
-<div id="content" class="meditor">
-    <form action="submit.php" onsubmit="document.getElementById('postxt').value = document.getElementById('noise').value; document.getElementById('postxt').click(); return false;">
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Post title">
-        </div>
-        <fieldset>
-            <textarea id="noise" name="noise" class="widgEditor nothing"></textarea>
-        </fieldset>
-        <fieldset class="submit">
-            <input type="submit" value="Check the submitted code" />
-        </fieldset>
-    </form>
-    <input id="postxt" type="hidden" value="" (click)="getPost($event)"  />
+<br/>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="input-group">
+				<span class="input-group-addon">Post</span>
+				<input id="post" type="text" class="form-control" name="msg" placeholder="Post title">
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<button type="button" class="btn btn-default">Save</button>
+			<button type="button" class="btn btn-default" (click)="preview()">Preview</button>
+			<button type="button" class="btn btn-default">Publish</button>
+			<button type="button" class="btn btn-default">Close</button>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-sm-12">
+			<app-ngx-editor [spellcheck]="true" [(ngModel)]="htmlContent" class="custom-editor"></app-ngx-editor>
+		</div>
+	</div>
+
 </div>

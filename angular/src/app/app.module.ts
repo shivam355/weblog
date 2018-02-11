@@ -13,6 +13,8 @@ import { WelcomeComponent } from './component/welcome/welcome.component';
 import { LogoutComponent } from './component/logout/logout.component';
 import { EditorComponent } from './component/editor/editor.component';
 import { NewPostComponent } from './component/new-post/new-post.component';
+import { NgxEditorModule } from 'ngx-editor';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { NewPostComponent } from './component/new-post/new-post.component';
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    NgxEditorModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
